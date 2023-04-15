@@ -14,8 +14,8 @@ bool Texture::Load()
         m_pImage = new Magick::Image(m_fileName);
         m_pImage->write(&m_blob, "RGBA");
     }
-    catch (std::exception e) {
-        std::cout << "Error loading texture '" << m_fileName << "': " << e.what() << std::endl;
+    catch (Magick::Error& Error) {
+        std::cout << "Error loading texture '" << m_fileName << "': " << Error.what() << std::endl;
         return false;
     }
 

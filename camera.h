@@ -52,3 +52,4 @@ private:
 };
 
 #endif	/* CAMERA_H */
+
