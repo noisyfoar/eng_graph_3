@@ -38,7 +38,7 @@ bool Technique::AddShader(GLenum ShaderType, const char* pShaderText) {
         return false;
     }
 
-   
+    
     m_shaderObjList.push_back(ShaderObj);
 
     const GLchar* p[1];
