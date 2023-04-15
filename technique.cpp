@@ -86,7 +86,7 @@ bool Technique::Finalize() {
         return false;
     }
 
- 
+    
     for (ShaderObjList::iterator it = m_shaderObjList.begin(); it != m_shaderObjList.end(); it++) {
         glDeleteShader(*it);
     }
